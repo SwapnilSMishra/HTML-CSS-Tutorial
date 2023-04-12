@@ -1,0 +1,45 @@
+<html>
+    <title>Form Example</title>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Enquiry</legend>
+                Name:<br> <input type="text"  placeholder="Enter Name" maxlength="5" autofocus="" required=""> <br/></br>
+
+                Father Name:<br> <input type="text"  value="Sunil" readonly="""> <br/></br>
+
+
+                Address:  <br><textarea disabled=""></textarea>           <br/></br>
+
+                Gender: <input type="radio" value="m" name="gender">Male
+                        <input type="radio" value="f" name="gender">Female <br/></br>
+
+                Country:<br><select>
+                    <optgroup label="ASIA">
+                        <option>India</option>
+                        <option>Nepal</option>
+                        <option>Bhutan</option>
+                      </optgroup>  
+                    <optgroup label="UK">
+                            <option>England</option>
+                            <option>Ireland</option>
+                    </optgroup>        
+                </select>  <br/></br> 
+
+                Hobbies:<br>
+                <input type="checkbox" name="hobby[]"> Drawing
+                <input type="checkbox" name="hobby" checked=""> Singing
+                <input type="checkbox" name="hobby[]"> Cycling
+                <br/></br>
+
+                Upload Photo:<br>
+                <input type="file" name="image">
+
+                <input type="submit" value="Submit">
+                
+                <input type="reset" value="reset">
+
+            </fieldset>
+        </form>
+    </body>
+</html>

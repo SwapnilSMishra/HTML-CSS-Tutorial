@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Example</title>
+    <style>
+        .overflow
+        {
+            width:100;
+            height:100px;
+            overflow:scroll;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="overflow">
+       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quas voluptas dolorem labore rem est neque eum necessitatibus. Ducimus adipisci eligendi reiciendis quae itaque, tenetur optio mollitia nisi soluta. Numquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate ducimus iusto dolor, vel officia accusamus unde iure necessitatibus quod nemo maiores rem est ea asperiores quos! Recusandae, ipsum quas?</p>
+       <p> #include<iostream>
+
+            using namespace std;
+            
+            struct Node
+            {
+                int data; 
+                Node * left;
+                Node * right;
+            };
+            
+            Node * createNode(int data)
+            { Node * newNode = new Node();
+              newNode->data = data;
+              newNode->left = newNode->right = nullptr;
+              return newNode;
+              }
+            int main()
+            {
+                Node * root=createNode(1); // level 1
+                
+                root-> left = createNode(2);  //level 2
+                root -> right = createNode(3);
+                
+                root->left->left =  createNode(4);// level 3
+                root->left->right=createNode(5);
+                root-> right->left= createNode(6);
+                root ->right->right = createNode(7);
+                
+                root->left->right->left= createNode(9);// level 5
+                root->right->right->left=createNode(15);
+                
+                cin.get();
+                
+            }
+            Binary Search Tree(BST)
+            Binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers.
+            It is called a binary tree because each tree node has a maximum of two children.
+            It is called a search tree because it can be used to search for the presence of a number .
+            The properties that separate a binary search tree from a regular binary tree is
+            1.All nodes of left subtree are less than the root node
+            2.All nodes of right subtree are more than the root node
+            3.Both subtrees of each node are also BSTs i.e. they have the above two properties
+            
+            
+            
+            Let us construct a Binary Search Tree from the data given below.
+            45            30            60           65           70
+            Let us take the first element as the root node.
+            #1) 45
+            
+            In the subsequent steps, we will place the data according to the definition of Binary Search t Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate ducimus iusto dolor, vel officia accusamus unde iure necessitatibus quod nemo maiores rem est ea asperiores quos! Recusandae, ipsum quas?</p>
+            <p> #include<iostream>
+     
+                 using namespace std;
+                 
+                 struct Node
+                 {
+                     int data; 
+                     Node * left;
+                     Node * right;
+                 };
+                 
+                 Node * createNode(int data)
+                 { Node * newNode = new Node();
+                   newNode->data = data;
+                   newNode->left = newNode->right = nullptr;
+                   return newNode;
+                   }
+                 int main()
+                 {
+                     Node * root=createNode(1); // level 1
+                     
+                     root-> left = createNode(2);  //level 2
+                     root -> right = createNode(3);
+                     
+                     root->left->left =  createNode(4);// level 3ree i.e. if data is less than the parent node, then it will be placed at the left child and if the data is greater than the parent node, then it will be the right child.</iostream>
+    </div>
+</body>
+</html>

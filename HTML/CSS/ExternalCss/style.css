@@ -1,0 +1,29 @@
+.main{
+    width:50;
+    height:100;
+    font-family:verdana;
+    font-size:50px;
+    color:black;
+    background-color: aquamarine;
+}
+
+.text
+{
+    width:50;
+    height:100;
+    font-family:'Times New Roman';
+    font-size:100px;
+    color:black;
+    background-color: red;
+}
+
+/* Using HOVER*/
+.text:hover
+{
+    width:50;
+    height:100;
+    font-family:'Times New Roman';
+    font-size:100px;
+    color:white;
+    background-color: black;
+}

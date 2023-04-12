@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation First Example</title>
+    <style>
+        .BoxContainer
+        {
+            width:600px;
+            height:600px;
+            border:2px solid black;
+            position:relative;
+        }
+        .Box
+        {
+            width:200px;
+            height:200px;
+            background-color:aqua ;
+            position:absolute;
+            animation-name:box;
+            animation-duration:5s;
+            animation-delay:2s;
+            /*animation-iteration-count: 2;*/
+            animation-fill-mode: backwards  /*forwards/both */;
+            /*animation-direction:reverse; */
+        }
+        @keyframes box
+        {
+            0%
+            {
+                top:0px;
+                left:0px;
+
+            }
+            25%
+            {
+                top:0px;
+                left:400px;
+                background-color:pink;
+            }
+            50%
+            {
+                top:400px;
+                left:400px;
+                background-color:yellow;;
+
+            }
+            75%
+            {
+                top:400px;
+                left:0px;
+                background-color:green;;
+
+            }
+            100%
+            {
+                top:0px;
+                left:0px;
+                background-color:red;
+
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="BoxContainer"> 
+        <div class="Box">
+
+        </div>
+    </div>
+</body>
+</html>
